@@ -13,6 +13,7 @@ from sklearn.feature_selection import RFE
 from sklearn.preprocessing import SplineTransformer
 from sklearn.calibration import CalibratedClassifierCV
 
+import preprocessing_data as preprocessing
 
 #Schedule for project:
 # 1. Introduction and setup and numpy/python basics
@@ -120,7 +121,7 @@ def visualize_results(y_true: npt.NDArray, y_pred: npt.NDArray):
     
     #fpr, tpr, _ = roc_curve(test_df['True'], test_df[model])
     #roc_auc = auc(fpr, tpr)
-    plt.plot(fpr, tpr, label=f'{model} (AUC = {roc_auc:.2f})')
+    #plt.plot(fpr, tpr, label=f'{model} (AUC = {roc_auc:.2f})')
 
     plt.plot([0, 1], [0, 1], 'r--', label='Random Guess')
 

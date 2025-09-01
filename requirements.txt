@@ -1,6 +1,8 @@
-numpy==2.2.1
+numpy
 pandas==2.2.3
 pyyaml==6.0.2
 matplotlib==3.10.0
 scikit-learn==1.6.1
 tqdm==4.67.1
+ipykernel
+import_ipynb
